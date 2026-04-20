@@ -1,0 +1,69 @@
+/* The wrapper for the whole screen */
+body {
+    background-color: #1b244a;
+    display: flex;
+    flex-direction: column; /* Stack the scoreboard and the Reset button */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Verdana', sans-serif;
+    color: white;
+}
+
+/* The wrapper for Home and Guest side-by-side */
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+}
+
+/* Each team's vertical stack */
+.team-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score-box {
+    background: #080001;
+    border-radius: 5px;
+    width: 120px; 
+    height: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-text {
+    color: #f94f6d; /* That pinkish-red neon color */
+    font-size: 70px;
+    margin: 0;
+    /* font-family: 'Your-Digital-Font-Here', monospace; */
+    font-family: 'Seven Segment', sans-serif;
+}
+
+/* Ensure buttons have a little gap between them */
+.btn-container {
+    display: flex;
+    gap: 10px; 
+}
+
+#reset-btn {
+    display: block;
+    margin: 20px auto; /* Centers the button horizontally */
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #f94f6d; /* Matching the red score color */
+    color: #f94f6d;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#reset-btn:hover {
+    background-color: #f94f6d;
+    color: #1b244a;
+}
+
